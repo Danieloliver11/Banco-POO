@@ -15,6 +15,14 @@ public class Conta {
 	}
 	
 	//sobrecarga
+	public Conta(int numero,String cpf,int saldo) {
+		this.numero = numero;
+		this.cpf = cpf;
+		this.saldo = saldo;
+		
+		}
+
+	
 	public Conta(int numero,String cpf,boolean ativa) {
 		this.numero = numero;
 		this.cpf = cpf;
