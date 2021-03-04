@@ -60,6 +60,8 @@ public class Main {
 		System.out.println(pessoa.getContadorTalao());
 		pessoa.setContadorTalao();
 		pessoa.setContadorTalao();
+		
+		
 		pessoa.setContadorTalao();
 		pessoa.setContadorTalao();*/
 		
