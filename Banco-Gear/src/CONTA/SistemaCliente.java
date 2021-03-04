@@ -1,4 +1,4 @@
-package Pessoas;
+package CONTA;
 
 import java.util.Scanner;
 
@@ -35,6 +35,8 @@ public class SistemaCliente {
 			}
 			case 3: {
 				System.out.println("CONTA CORRENTE");
+				//ContaCorrente cc =  new ContaCorrente(20, "Bruno", 150);
+				//cc.credito(52);
 
 				break;
 			}

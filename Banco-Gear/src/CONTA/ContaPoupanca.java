@@ -1,4 +1,4 @@
-package ContasDoBanco;
+package CONTA;
 
 public class ContaPoupanca {
 
