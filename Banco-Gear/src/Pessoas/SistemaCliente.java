@@ -1,65 +1,56 @@
 package Pessoas;
 
-import javax.swing.JOptionPane;
+import java.util.Scanner;
 
 public class SistemaCliente {
-
-	public static String msg, titulo;
-	public static String[] simNao = { "Sim", "Não" };
-	public static int naoSim;
-	public static String[] opcao = { "Conta poupança", "Conta especial", "Conta corrente", 
-			                         "Conta empresa", "Conta estudantil","Sair" };
-	public static int Opcao;
-
 	public static void main(String[] args) {
 
-		msg = "Generation Brasil";
-		titulo = "Sistema Banco G9";
+		Scanner teclado = new Scanner(System.in);
+		int opcao;
+		long x;
+		System.out.print("\n Ola seja bem vindo ao Banco G9");
+		do {
+			System.out.print("\n-------------------//------------------");
+			System.out.print("\nEntre com a opcao:");
+			System.out.print("\n ----1: CONTA POUPANÇA");
+			System.out.print("\n ----2: CONTA ESPECIAL");
+			System.out.print("\n ----3: CONTA CORRENTE");
+			System.out.print("\n ----4: CONTA EMPRESA");
+			System.out.print("\n ----5: CONTA ESTUDANTIL");
+			System.out.print("\n ----6: Sair do programa");
+			System.out.print("\n ------------------//------------------");
+			System.out.print("\n-> ");
 
-		JOptionPane.showMessageDialog(null, msg, titulo, JOptionPane.PLAIN_MESSAGE);
-
-		do { 
-
-			msg = "Selecione o botão da opção desejada";
-			Opcao = JOptionPane.showOptionDialog(null, msg, titulo, 1, 
-					JOptionPane.QUESTION_MESSAGE, null, opcao, null);
-
-			switch(Opcao) {
-			case 0:
-
+			opcao = teclado.nextInt();
+			switch (opcao) {
+			case 1: {
 				System.out.println("CONTA POUPANÇA");
-				break;
 
-			case 1:
-				System.out.println("CONTA ESPECIAL");
-				break;
-
-			case 2:
-				System.out.println("CONTA CORRENTE");
-				break;
-
-			case 3:
-				System.out.println("CONTA EMPRESA");
-				break;
-				
-			case 4:
-				System.out.println("CONTA ESTUDANTIL");
-				break;
-				
-			case 5:
-				msg = "Deseja sair ?";
-
-				naoSim =  JOptionPane.showOptionDialog(null, msg, titulo, 1, 
-						JOptionPane.QUESTION_MESSAGE, null, simNao, null);
-
-				if(naoSim == 1) 
-					Opcao =- 1;
-				System.out.println("Volte sempre, e obrigado pela preferência");
 				break;
 			}
-		} while(Opcao != 5);
+			case 2: {
+				System.out.println("CONTA ESPECIAL");
+
+				break;
+			}
+			case 3: {
+				System.out.println("CONTA CORRENTE");
+
+				break;
+			}
+			case 4: {
+				System.out.println("CONTA EMPRESA");
+				break;
+			}
+			case 5: {
+				System.out.println("CONTA ESTUDANTIL");
+
+				break;
+			}
+			}
+		} while (opcao != 6);
+		System.out.println("Obrigado pela preferencia, volte sempre :)");
 		System.exit(0);
+		teclado.close();
 	}
 }
-
-
