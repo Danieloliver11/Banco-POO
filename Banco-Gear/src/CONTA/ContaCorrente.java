@@ -20,10 +20,10 @@ public class ContaCorrente extends Conta {
 
 	void setContadorTalao() {
 		if (contadorTalao <= 0) {
-			System.out.println("Desculpe vocÃª nÃ£o tem mais talÃ£o para ser usado!");
+			System.out.println("Desculpe você não tem mais talão para ser usado!");
 		} else {
 			this.contadorTalao = this.contadorTalao - 1;
-			System.out.println("VocÃª solicitou um talÃ£o.\nVocÃª tem " + contadorTalao + " TalÃµes restantes");
+			System.out.println("Vocêª solicitou um talão.\n Vocêª tem " + contadorTalao + " Talões restantes");
 		}
 	}
 
@@ -40,11 +40,4 @@ public class ContaCorrente extends Conta {
 
 		}
 	}
-	/*
-	 * Solicitar ao final dos 10 movimentos ou ao pedido de sair se o mesmo deseja
-	 * solicitar cheque, limitando em apenas 3 cheques.
-	 * 
-	 * public int movimentos() { int movimento = 10; return movimento; }
-	 */
-
 }
