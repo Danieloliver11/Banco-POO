@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\Daniel\Documents\GitHub\Banco-POO\.metadata\.plugins\org.eclipse.jdt.core
+3596418623.index
+2196199803.index
+3151494320.index

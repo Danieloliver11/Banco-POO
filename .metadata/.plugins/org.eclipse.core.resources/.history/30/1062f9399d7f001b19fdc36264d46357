@@ -1,0 +1,32 @@
+package Contas;
+
+public class ContaEmpresa extends Conta {
+	
+	private double emprestimoEmpresa = 10000;
+	
+	
+
+	ContaEmpresa(double emprestimoEmpresa){
+		this.emprestimoEmpresa = emprestimoEmpresa;
+	}
+	
+	//100
+	
+		@Override
+	public void debito (double valor) {
+		if (valor >= this.saldo) {
+			this.saldo = this.saldo - valor;
+		} else {
+			System.out.println("Vocêo não tem saldo suficiente!");
+		}
+	}
+	
+	public void limite(double credito) {
+		if (credito<=emprestimoEmpresa) {
+			this.emprestimoEmpresa = emprestimoEmpresa - credito;	
+			this.saldo = this.saldo + credito;						
+		} else if (credito>emprestimoEmpresa) {
+			System.out.println("ESSE VALOR EXCEDE SEU LIMITE DE CR�DITO!\n");
+		}
+	}
+}
